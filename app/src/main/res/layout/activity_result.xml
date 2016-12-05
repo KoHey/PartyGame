@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.kenkou.partygame.ResultMulti"
+    android:background="@drawable/result">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/MessageLayout"
+        android:layout_height="400dp">
+
+        <TextView
+            android:text="リザルト"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:id="@+id/result"
+            android:textSize="36sp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/ScoreLayout"
+            android:layout_below="@+id/result"
+            android:layout_marginTop="53dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/P1Layout"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                >
+
+                <TextView
+                    android:text="プレイヤー1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/p1"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textResultScoreP1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="70dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/P2Layout"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:text="プレイヤー2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/p2"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:text="34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textResultScoreP2"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="70dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/JudgmentLayout"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ScoreLayout"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="プレイヤー1の勝利"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textJudgment"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/ButtonLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="トップに戻る"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:id="@+id/buttonBack"
+            android:textSize="30sp"
+            android:background="@android:color/darker_gray"/>
+    </RelativeLayout>
+</RelativeLayout>

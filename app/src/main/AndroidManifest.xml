@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.kenkou.partygame">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name=".Globals"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="酔い覚まし"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TopActivity"
+                  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".GamePlayMulti"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ResultMulti"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".GamePlaySingle"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Description"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ResultSingle"
+                  android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

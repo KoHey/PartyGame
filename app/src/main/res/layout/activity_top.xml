@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_top"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.kenkou.partygame.TopActivity"
+    android:background="@drawable/top">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="200dp"
+        android:id="@+id/MenuLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="240dp">
+
+        <Button
+            android:text="ひとり"
+            android:layout_width="match_parent"
+            android:id="@+id/buttonSingle"
+            android:textSize="30sp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:text="ふたり"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/buttonMulti"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"/>
+
+        <Button
+            android:text="せつめい"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/buttonDescription"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+</RelativeLayout>

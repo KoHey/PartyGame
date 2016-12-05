@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_play"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.kenkou.partygame.GamePlayMulti"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:id="@+id/P1Layout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageP11"
+            app:srcCompat="@drawable/player1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/player1"
+            android:id="@+id/imageP13"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/imageP12"
+            app:srcCompat="@drawable/player1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:id="@+id/P2Layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/player2"
+            android:id="@+id/imageP23"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/player2"
+            android:id="@+id/imageP22"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/player2"
+            android:id="@+id/imageP21"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:id="@+id/BattleLayout"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/TargetLayout"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_width="330dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/human"
+                android:id="@+id/imageTarget1"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/human"
+                android:id="@+id/imageTarget2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/human"
+                android:id="@+id/imageTarget3"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:id="@+id/P1DataLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:id="@+id/textTimerP1"
+                android:textSize="40sp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/textScoreP1"
+                android:layout_alignBottom="@+id/textScoreP1"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textScoreP1"
+                android:textSize="50sp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:id="@+id/P2DataLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            >
+
+            <TextView
+                android:text="00:00"
+                android:layout_width="wrap_content"
+                android:id="@+id/textTimerP2"
+                android:textSize="40sp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textScoreP2"
+                android:textSize="50sp"
+                android:textColor="@android:color/white"
+                android:layout_alignBaseline="@+id/textTimerP2"
+                android:layout_alignBottom="@+id/textTimerP2"
+                android:layout_alignParentStart="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
